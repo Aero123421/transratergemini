@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "description": "Chrome extension for translating web pages using Gemini API",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && copyfiles -u 1 src/**/*.html src/**/*.json dist",
     "test": "echo 'No tests specified' && exit 0"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/chrome": "^0.0.326",
+    "copyfiles": "^2.4.1",
     "typescript": "^5.2.2"
   }
 }
