@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "noEmitOnError": true,
+    "types": ["chrome"],
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": ["src/**/*"]
+}

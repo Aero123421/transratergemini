@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Transrater Gemini",
+  "version": "0.1.0",
+  "description": "Translate web pages using Gemini API",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "serviceWorker.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Translate Page"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
