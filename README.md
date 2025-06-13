@@ -23,3 +23,12 @@ npm run build
 - 選択テキストの翻訳
 - X 投稿の翻訳
 - オプション画面で API キーや言語設定を管理
+
+## Discord RSS ボット
+
+`discord_rss_bot.py` を実行すると、 `/addrss` スラッシュコマンドで RSS フィードを登録できるシンプルな Discord ボットが起動します。実行前に `DISCORD_BOT_TOKEN` 環境変数に Bot のトークンを設定してください。
+
+```bash
+export DISCORD_BOT_TOKEN=your_token_here
+python3 discord_rss_bot.py
+```
